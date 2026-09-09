@@ -1,0 +1,44 @@
+.Backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: light-dark(#f3f3f34d, #1717174d);
+  backdrop-filter: blur(5px);
+  inset: 0;
+}
+
+.Loader {
+  width: 60px;
+  aspect-ratio: 2;
+  --_g: no-repeat
+    radial-gradient(
+      circle closest-side,
+      light-dark(#0d0d0d, #ececec) 90%,
+      light-dark(#0d0d0d00, #ececec00)
+    );
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
+  animation: l3 1s infinite linear;
+}
+
+@media (prefers-color-scheme: dark) {
+  .LoaderWrapper {
+    opacity: 0.85;
+  }
+}
+
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}

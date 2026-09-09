@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  height: 100vh;
+  padding: 16px;
+}
+
+.Header {
+  text-align: center;
+}
+
+.Logo {
+  width: 64px;
+  height: 64px;
+}
+
+.Title {
+  margin: 0;
+}
+
+.AppContainer {
+  width: 100%;
+  padding: 16px;
+  background: light-dark(#ffffff, #212121);
+  border-radius: 16px;
+  overflow-y: auto;
+}

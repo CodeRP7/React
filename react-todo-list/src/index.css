@@ -1,0 +1,54 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: light-dark(#0d0d0d, #ececec);
+  background: light-dark(#f3f3f3, #171717);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 640px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+input,
+textarea,
+select,
+button {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid light-dark(#d1d1d1, #333333);
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  background: lightgray;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"],
+select[aria-invalid="true"] {
+  border-color: Salmon;
+  outline-color: Salmon;
+}

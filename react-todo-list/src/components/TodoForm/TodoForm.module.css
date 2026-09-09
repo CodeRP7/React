@@ -1,0 +1,18 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.Form input[type="submit"] {
+  width: 100%;
+}
+
+.Title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Title button {
+  align-self: center;
+}
